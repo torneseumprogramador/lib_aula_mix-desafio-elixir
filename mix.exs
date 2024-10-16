@@ -7,7 +7,9 @@ defmodule LibAulaMix.MixProject do
       version: "0.1.0",
       elixir: "~> 1.16",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      description: "Uma biblioteca de exemplo para aprendizado de Elixir",
+      package: package()
     ]
   end
 
@@ -21,6 +23,7 @@ defmodule LibAulaMix.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}  # Adiciona ex_doc
       # {:dep_from_hexpm, "~> 0.3.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]
@@ -29,9 +32,9 @@ defmodule LibAulaMix.MixProject do
   defp package do
     [
       name: :lib_aula_mix,
-      description: "Primeira Lib publicada na aula do desafio Elixir do https://www.torneseumprogramador.com.br/",
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/usuario/lib_aula_mix-desafio-elixir"}
+      links: %{"GitHub" => "https://github.com/torneseumprogramador/lib_aula_mix-desafio-elixir"},
+      maintainers: ["Danilo Aparecido dos Santos"]
     ]
   end
 end
