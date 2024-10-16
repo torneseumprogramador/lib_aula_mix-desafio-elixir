@@ -31,7 +31,7 @@ defmodule LibAulaMix.MixProject do
       name: :lib_aula_mix,
       description: "Primeira Lib publicada na aula do desafio Elixir do https://www.torneseumprogramador.com.br/",
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/usuario/lib_aula_mix-desafio-elixir"}
+      links: %{"GitHub" => "https://github.com/torneseumprogramador/lib_aula_mix-desafio-elixir"}
     ]
   end
 end
